@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px;
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    margin-top: 16px;
+}
+
+.carousel-item img {
+    height: 70vh;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.caude img {
+    width: 350px;
+    margin-top: 16px;
+}
+
+.caude {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 5%;
+    row-gap: 1%;
+
+}
+
+@media screen and (max-width:667px) {
+    
+    .container {
+        display: block;
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        mask-position: none;
+    }
+
+
+    header {
+        width: 100%;
+    }
+
+    .carousel{
+        width:80%;
+    }
+
+    .carousel-item img {
+        height:60vh;
+        margin-right: 16px;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 16px;
+    }
+
+    .caude{
+        display: block;
+        width: 80%;
+    }
+
+    .caude img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        display: block;
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        mask-position: none;
+    }
+
+
+    header {
+        width: 100%;
+    }
+
+    .carousel{
+        width:100%;
+    }
+
+    .carousel-item img {
+        height:70vh;
+        margin-right: 16px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .caude{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+        row-gap: 1%;
+    }
+
+    .caude img {
+        width: 100%;
+    }
+}
+
